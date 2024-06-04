@@ -36,3 +36,28 @@ class ParquetDataSource(DataSource):
             .format('parquet')
             .load(self.path)
         )
+
+class DeltaDataSource(DataSource):
+
+    def get_data_frame(self):
+
+        table_name = self.path
+        return (
+            spark
+            .read
+            .table(table_name)
+        )
+    
+def get_data_source(data_type, file_path):
+
+    if data_type == "CSV":
+        return CSVDataSource(file_path)
+    
+    elif data_type == "parquet":
+        return ParquetDataSource(file_path)
+    
+    elif data_type == "delta":
+        return DeltaDataSource(file_path)
+    
+    else:
+        raise ValueError(f"Not implemented for data_type: {data_type}")
