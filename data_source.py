@@ -25,3 +25,14 @@ class CSVDataSource(DataSource):
             .option("header", True)
             .load(self.path)
         )
+
+class ParquetDataSource(DataSource):
+
+    def get_data_frame(self):
+
+        return (
+            spark
+            .read
+            .format('parquet')
+            .load(self.path)
+        )
