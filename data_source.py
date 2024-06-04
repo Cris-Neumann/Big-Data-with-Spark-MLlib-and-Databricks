@@ -13,3 +13,15 @@ class DataSource:
         """
 
         raise ValueError("Not Implemented")
+
+class CSVDataSource(DataSource):
+
+    def get_data_frame(self):
+
+        return (
+            spark
+            .read
+            .format('csv')
+            .option("header", True)
+            .load(self.path)
+        )
