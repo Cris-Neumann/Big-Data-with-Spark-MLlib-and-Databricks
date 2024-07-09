@@ -9,3 +9,14 @@ La métrica de evaluación, 𝑀, para esta competencia es la media de dos medid
 La tasa predeterminada capturada en 4% es el porcentaje de etiquetas positivas (predeterminadas) capturadas dentro del 4% de las predicciones con mayor clasificación y representa una estadística de Sensibilidad/Recuperación. Para ambas submétricas 𝐺 y 𝐷, a las etiquetas negativas se les asigna un peso de 20 para ajustar el muestreo descendente. Esta métrica tiene un valor máximo de 1.0.
 
 Para cada id de cliente del del conjunto de prueba (campo 'customer_ID'), se va a predecir una probabilidad para la variable objetivo, en el formato (customer_ID, prediction).
+
+El conjunto de datos contiene características de perfil agregadas para cada cliente en cada fecha de estado de cuenta. Las características están anonimizadas y normalizadas y se dividen en las siguientes categorías generales:
+
+D_* = Variables de morosidad
+S_* = Variables de gasto
+P_* = Variables de pago
+B_* = Variables de equilibrio
+R_* = Variables de riesgo
+con las siguientes características siendo categóricas:
+
+['B_30', 'B_38', 'D_114', 'D_116', 'D_117', 'D_120', 'D_126', 'D_63', 'D_64', 'D_66', 'D_68']
