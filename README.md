@@ -20,3 +20,5 @@ R_* = Variables de riesgo
 con las siguientes características siendo categóricas:
 
 ['B_30', 'B_38', 'D_114', 'D_116', 'D_117', 'D_120', 'D_126', 'D_63', 'D_64', 'D_66', 'D_68']
+
+El objetivo es predecir, para cada customer_ID, la probabilidad de un futuro impago ( target = 1).
