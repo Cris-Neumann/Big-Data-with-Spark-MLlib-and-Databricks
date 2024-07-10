@@ -25,3 +25,8 @@ El objetivo es predecir, para cada customer_ID, la probabilidad de un futuro imp
 
 Los datos de entrenamiento y de prueba se obtendrán desde la API de Kaggle, mientras que las etiquetas de los id de clientes han sido catalogadas a parte, y han sido almcadenadas por el equipo en Amazon S3, por lo cual se deberán obtener con Databricks las etiquetas desde un bucket de AWS.
 
+## ¿Qué es Databricks?
+Apache Kafka es una plataforma de procesamiento de flujos de datos distribuida y de código abierto, y se utiliza principalmente para construir pipelines de datos en tiempo real y aplicaciones de streaming de datos, como por ejemplo: monitoreo en tiempo real, análisis de logs, procesamiento de eventos, etc.
+
+Databricks es una plataforma en la nube que optimiza el uso de Apache Spark para la ingeniería de datos. Facilita la colaboración entre ingenieros de datos y científicos de datos al proporcionar un entorno integrado para el procesamiento y análisis de grandes volúmenes de datos, permiendo diseñar, implementar y gestionar flujos de trabajo de datos de manera eficiente, aprovechando las capacidades de Apache Spark para realizar tareas de ETL, procesamiento en tiempo real y machine learning. Documentación oficial: https://www.databricks.com/databricks-documentation
+
