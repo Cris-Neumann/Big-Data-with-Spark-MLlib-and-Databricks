@@ -23,3 +23,5 @@ con las siguientes características siendo categóricas:
 
 El objetivo es predecir, para cada customer_ID, la probabilidad de un futuro impago ( target = 1).
 
+Los datos de entrenamiento y de prueba se obtendrán desde la API de Kaggle, mientras que las etiquetas de los id de clientes han sido catalogadas a parte, y han sido almcadenadas por el equipo en Amazon S3, por lo cual se deberán obtener con Databricks las etiquetas desde un bucket de AWS.
+
