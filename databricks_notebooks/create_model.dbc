@@ -1,0 +1,4 @@
+# Lista el contenido del directorio raíz en DBFS (cluster distribuido, donde persisten los datos)
+root_files = dbutils.fs.ls('/')
+for file in root_files:
+    print(file.path)
