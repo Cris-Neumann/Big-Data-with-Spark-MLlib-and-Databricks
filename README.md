@@ -32,3 +32,8 @@ Los datos de entrenamiento y de prueba se obtendrán desde la API de Kaggle, mie
 ## ¿Qué es Databricks?
 Databricks es una plataforma en la nube que optimiza el uso de Apache Spark para la ingeniería de datos. Facilita la colaboración entre ingenieros de datos y científicos de datos al proporcionar un entorno integrado para el procesamiento y análisis de grandes volúmenes de datos, permiendo diseñar, implementar y gestionar flujos de trabajo de datos de manera eficiente, aprovechando las capacidades de Apache Spark para realizar tareas de ETL, procesamiento en tiempo real y machine learning. Documentación oficial: https://www.databricks.com/databricks-documentation
 
+## ¿Qué es Databricks?
+Kaggle es una plataforma en línea para la competencia en ciencia de datos y machine learning, donde los usuarios pueden compartir datos, códigos, y modelos, así como participar en competencias para resolver problemas reales. Para este proyecto, es necesario que se cree
+
+https://www.kaggle.com/
+
