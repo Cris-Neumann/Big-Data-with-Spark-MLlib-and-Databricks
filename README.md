@@ -5,7 +5,7 @@ En el siguiente proyecto se usará un algortimo de Machine Learning para predeci
 El objetivo es predecir la probabilidad de que un cliente no pague el saldo de su tarjeta de crédito en el futuro en función de su perfil de cliente mensual. La variable binaria objetivo se calcula observando el desempeño de 18 meses después del último estado de cuenta de la tarjeta de crédito y, si el cliente no paga el monto adeudado en los 120 días posteriores a la fecha del último estado de cuenta, se considera un evento de incumplimiento.
 
 ## Sobre el conjunto de datos a utilizar
-El conjunto de datos contiene características de perfil agregadas para cada cliente (campo "customer_ID") en cada fecha de estado de cuenta. La cntidad de registros supera las 5,5 millones de operaciones crediticias procesadas en el conjunto de entrenamiento, x en el conjunto de prueba y sobre los 450.000 los clientes etiquetados. Las características están anonimizadas y normalizadas y se dividen en las siguientes categorías generales:
+El conjunto de datos contiene características de perfil agregadas para cada cliente (campo "customer_ID") en cada fecha de estado de cuenta. La cantidad de registros supera los 11 millones de operaciones crediticias procesadas en el conjunto de prueba, sobre los 5,5 millones en el conjunto de entrenamiento y sobre los 450.000 clientes etiquetados. Las características están anonimizadas y normalizadas y se dividen en las siguientes categorías generales:
 
 - D_* = Variables de morosidad
 - S_* = Variables de gasto
