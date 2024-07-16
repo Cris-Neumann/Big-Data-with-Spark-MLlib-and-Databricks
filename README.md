@@ -15,7 +15,7 @@ El conjunto de datos contiene características de perfil agregadas para cada cli
 
 Con las siguientes características siendo categóricas: ['B_30', 'B_38', 'D_114', 'D_116', 'D_117', 'D_120', 'D_126', 'D_63', 'D_64', 'D_66', 'D_68'] El objetivo es predecir, para cada "customer_ID", la probabilidad de un futuro impago (campo "target" = 1).
 
-Los datos de entrenamiento y de prueba se obtendrán desde la API de Kaggle, desde archivos "train.parquet" y "test.parquet", respectivamente, mientras que las etiquetas (campo donde se clasifican como clientes con default o no, para realizar aprendizaje supervisado) de los id de clientes han sido catalogadas a parte, y han sido almcadenadas por el equipo de encarado del etiquetado en Amazon S3, por lo cual se deberán obtener con Databricks las etiquetas desde un bucket de AWS.
+Los datos de entrenamiento y de prueba se obtendrán desde la API de Kaggle, desde archivos "train.parquet" y "test.parquet", respectivamente, mientras que las etiquetas (campo donde se clasifican como clientes con default o no, para realizar aprendizaje supervisado) de los id de clientes han sido catalogadas a parte, y han sido almacenadas por el equipo de encargado del etiquetado en Amazon S3, en archivo "train_labels.csv", por lo cual se deberán obtener con Databricks las etiquetas desde un bucket de AWS.
 
 ## Sobre las métricas de evaluación solicitada por el cliente
 La métrica de evaluación, 𝑀, para este proyecto es la media de dos medidas de ordenamiento por rango: Coeficiente de Gini Normalizado, 𝐺, y la tasa de incumplimiento se situó en el 4%,𝐷.
