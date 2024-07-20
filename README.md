@@ -35,4 +35,7 @@ Databricks es una plataforma en la nube que optimiza el uso de Apache Spark para
 ## ¿Qué es Kaggle?
 Kaggle es una plataforma en línea para la competencia en ciencia de datos, donde los usuarios pueden compartir datos, códigos, y modelos, así como participar en competencias para resolver problemas reales. Para este proyecto, es necesario que se cree una cuenta gratuita en Kaggle ( https://www.kaggle.com/ ) y que utilice su API púbica, para lo cual debe solicitar en su página que se cree su API Token ( https://christianjmills.com/posts/kaggle-obtain-api-key-tutorial/ ), con lo cual obtendrá un archivo json con su usuario y contraseña de la API de Kaggle.
 
+## Sobre el algoritmo Gradient Boosting Trees
+
+
 
