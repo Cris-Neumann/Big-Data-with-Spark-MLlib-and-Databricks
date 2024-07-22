@@ -6,7 +6,7 @@
 - [Sobre el conjunto de datos](#Sobre-el-conjunto-de-datos)
 - [Sobre la métrica de evaluación](#Sobre-la-métrica-de-evaluación)
 - [¿Qué es Databricks?](#qué-es-databricks)
-- [¿Qué es Kaggel?](#qué-es-kaggle)
+- [¿Qué es Kaggle?](#qué-es-kaggle)
 - [Sobre el algoritmo Gradient Boosting Trees](#Sobre-el-algoritmo-Gradient-Boosting-Trees)
 
 ## Resumen del proyecto
