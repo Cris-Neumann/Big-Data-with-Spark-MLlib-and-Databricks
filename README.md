@@ -1,9 +1,18 @@
-# Proyecto de Big Data con Spark MLlib y Databricks.
+<h1 align="center"> Big Data con Spark MLlib y Databricks </h1>
+
+## Índice
+
+- [Resumen del proyecto](#Resumen-del-proyecto)
+- [Sobre el conjunto de datos](#Sobre-el-conjunto-de-datos)
+- [Sobre la métrica de evaluación](#Sobre-la-métrica-de-evaluación)
+- [¿Qué es Databricks?](#qué-es-databricks)
+- [¿Qué es Kaggel?](#qué-es-kaggle)
+- [Sobre el algoritmo Gradient Boosting Trees](#Sobre-el-algoritmo-Gradient-Boosting-Trees)
 
 ## Resumen del proyecto
 En el siguiente proyecto se usará un algortimo de Machine Learning llamado Gradient Boosting Trees (GBTClassifier) para predecir el incumplimiento crediticio, basandose en un dataset de Kaggle de American Express especialmente preparado para este fin (https://acortar.link/LOfyfq). El objetivo es predecir la probabilidad de que un cliente no pague el saldo de su tarjeta de crédito en el futuro en función de su perfil de cliente mensual. La variable binaria objetivo se calcula observando el desempeño de 18 meses después del último estado de cuenta de la tarjeta de crédito y, si el cliente no paga el monto adeudado en los 120 días posteriores a la fecha del último estado de cuenta, se considera un evento de incumplimiento. El origen de los datos será la API de Kaggle y un bucket de Amazon S3, mientras que el procesamiento y creación del modelo de se ejecutara en Databricsk, usando Apache Spark.
 
-## Sobre el conjunto de datos a utilizar
+## Sobre el conjunto de datos
 El conjunto de datos contiene características de perfil agregadas para cada cliente (campo "customer_ID") en cada fecha de estado de cuenta. La cantidad de registros supera los 11 millones de operaciones crediticias procesadas en el conjunto de prueba, sobre los 5,5 millones en el conjunto de entrenamiento, y sobre los 450.000 clientes etiquetados. Las características están anonimizadas y normalizadas y se dividen en las siguientes categorías generales:
 
 - D_* = Variables de morosidad
@@ -16,7 +25,7 @@ Con las siguientes características siendo categóricas: ['B_30', 'B_38', 'D_114
 
 Los datos de entrenamiento y de prueba se obtendrán desde la API de Kaggle, desde los archivos "train.parquet" y "test.parquet", respectivamente, mientras que las etiquetas (campo donde se clasifican como clientes con default o no, para realizar aprendizaje supervisado) de los id de clientes han sido catalogadas a parte, y han sido almacenadas por el equipo de encargado del etiquetado en Amazon S3, en archivo "train_labels.csv", por lo cual se deberán obtener con Databricks las etiquetas desde un bucket de AWS.
 
-## Sobre las métricas de evaluación solicitada
+## Sobre la métrica de evaluación
 La métrica de evaluación, 𝑀, para este proyecto es la media de dos medidas de ordenamiento por rango: Coeficiente de Gini Normalizado, 𝐺, y la tasa de incumplimiento se situó en el 4%,𝐷.
 
 𝑀= 0,5 ⋅ ( 𝐺 + 𝐷 )
@@ -35,7 +44,7 @@ Databricks es una plataforma en la nube que optimiza el uso de Apache Spark para
 ## ¿Qué es Kaggle?
 Kaggle es una plataforma en línea para la competencia en ciencia de datos, donde los usuarios pueden compartir datos, códigos, y modelos, así como participar en competencias para resolver problemas reales. Para este proyecto, es necesario que se cree una cuenta gratuita en Kaggle ( https://www.kaggle.com/ ) y que utilice su API púbica, para lo cual debe solicitar en su página que se cree su API Token ( https://christianjmills.com/posts/kaggle-obtain-api-key-tutorial/ ), con lo cual obtendrá un archivo json con su usuario y contraseña de la API de Kaggle.
 
-## Sobre el algoritmo de Machine Learning Gradient Boosting Trees
+## Sobre el algoritmo Gradient Boosting Trees
 Gradient Tree Boosting (GBT) es un algoritmo de aprendizaje supervisado utilizado principalmente para tareas de clasificación y regresión. El concepto central detrás de GTB es construir un modelo robusto mediante la combinación de varios árboles de decisión simples (o débiles), de manera secuencial, donde cada árbol nuevo intenta corregir los errores cometidos por los árboles anteriores. Aunque es computacionalmente intensivo, sus capacidades para manejar datos complejos y producir resultados precisos lo hacen muy popular en el campo del machine learning.
 
 
