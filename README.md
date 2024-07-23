@@ -24,6 +24,12 @@ Databricks es una plataforma en la nube que optimiza el uso de Apache Spark para
 ## ¿Qué es Kaggle?
 Kaggle es una plataforma en línea para la competencia en ciencia de datos, donde los usuarios pueden compartir datos, códigos, y modelos, así como participar en competencias para resolver problemas reales. Para este proyecto, es necesario que se cree una cuenta gratuita en Kaggle ( https://www.kaggle.com/ ) y que utilice su API púbica, para lo cual debe solicitar en su página que se cree su API Token ( https://christianjmills.com/posts/kaggle-obtain-api-key-tutorial/ ), con lo cual obtendrá un archivo json con su usuario y contraseña de la API de Kaggle.
 
+## Arquitectura empleada
+El esquema general del modo en que se relacionan las partes del sistema es el siguiente:
+<br/><br/>
+
+<img width="649" alt="imagen_de_prueba" src="https://github.com/user-attachments/assets/4b7abe1c-8a26-4476-8254-fb9d5a4b1ba4">
+
 ## Sobre el conjunto de datos
 El conjunto de datos contiene características de perfil agregadas para cada cliente (campo "customer_ID") en cada fecha de estado de cuenta. La cantidad de registros supera los 11 millones de operaciones crediticias procesadas en el conjunto de prueba, sobre los 5,5 millones en el conjunto de entrenamiento, y sobre los 450.000 clientes etiquetados. Las características están anonimizadas y normalizadas y se dividen en las siguientes categorías generales:
 
