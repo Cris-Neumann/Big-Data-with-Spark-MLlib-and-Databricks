@@ -17,6 +17,11 @@ En el siguiente proyecto se usará un algortimo de Machine Learning llamado Grad
 Databricks es una plataforma en la nube que optimiza el uso de Apache Spark para la ingeniería de datos. Facilita la colaboración entre ingenieros de datos y científicos de datos al proporcionar un entorno integrado para el procesamiento y análisis de grandes volúmenes de datos, permiendo diseñar, implementar y gestionar flujos de trabajo de datos de manera eficiente, aprovechando las capacidades de Apache Spark para realizar tareas de ETL, procesamiento en tiempo real y machine learning. Documentación oficial: https://www.databricks.com/databricks-documentation.
 
 * Es importante notar que, para efectos de aplicaciones creadas con Apache Spark, en Databricks no es necesario inicializar el "SparkContext" ni crear "SparkSessions", pues el propio entorno ya lo hace.
+  
+* Como paso previo, se ddebe crear un cluster, el cual para la versión Comunnity Edition, posee 15 GB de memoria y 2 cores. Adjunto una imagen donde debe crear el custer, en sección "compute":
+<br/><br/>
+
+<img width="555" alt="create_test_cluster" src="https://github.com/user-attachments/assets/58557b47-3c53-47cb-b46f-788999920702">
 
 * Por una lado, cuando se accede al sistema de archivos local (por ejemplo: 'file:/tmp/wiki_data/') del nodo en el que se está ejecutando el código, es similar a cómo se manjean archivos en un entorno de escritorio o servidor normal. Los archivos almacenados en el sistema de archivos local son temporales y pueden no estar disponibles después de que finaliza la sesión o el clúster se reinicia.
 
