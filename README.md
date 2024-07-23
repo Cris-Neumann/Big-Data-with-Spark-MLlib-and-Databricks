@@ -5,6 +5,7 @@
 - [Resumen del proyecto](#Resumen-del-proyecto)
 - [¿Qué es Databricks?](#qué-es-databricks)
 - [¿Qué es Kaggle?](#qué-es-kaggle)
+- [Arquitectura empleada](#Arquitectura-empleada)
 - [Sobre el conjunto de datos](#Sobre-el-conjunto-de-datos)
 - [Sobre la métrica de evaluación](#Sobre-la-métrica-de-evaluación)
 - [Sobre el algoritmo Gradient Boosting Trees](#Sobre-el-algoritmo-Gradient-Boosting-Trees)
