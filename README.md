@@ -23,7 +23,7 @@ Databricks es una plataforma en la nube que optimiza el uso de Apache Spark para
 
 <img width="555" alt="create_test_cluster" src="https://github.com/user-attachments/assets/58557b47-3c53-47cb-b46f-788999920702">
 
-* Por una lado, cuando se accede al sistema de archivos local (por ejemplo: 'file:/tmp/wiki_data/') del nodo en el que se está ejecutando el código, es similar a cómo se manjean archivos en un entorno de escritorio o servidor normal. Los archivos almacenados en el sistema de archivos local son temporales y pueden no estar disponibles después de que finaliza la sesión o el clúster se reinicia.
+* Por u lado, cuando se accede al sistema de archivos local en Databricks (por ejemplo: 'file:/tmp/wiki_data/') del nodo en el que se está ejecutando el código, es similar a cómo se manjean archivos en un entorno de escritorio o servidor normal. Los archivos almacenados en el sistema de archivos local son temporales y pueden no estar disponibles después de que finaliza la sesión o el clúster se reinicia.
 
 * Por otro lado, Databricks cuenta con un sistema de archivos distribuido llamado 'DBFS' (Databricks File System) (por ejemplo: 'dbfs:/tmp/wiki_data/'), el cual está disponible en todos los nodos del clúster de Databricks. Esto significa que los archivos en DBFS pueden ser accedidos desde cualquier nodo, lo cual es crucial para la ejecución de trabajos distribuidos. Los archivos almacenados en DBFS son persistentes y están disponibles incluso después de que finaliza la sesión o se reinicia el clúster. Esto hace que DBFS sea ideal para almacenar datos que necesitas reutilizar o compartir entre sesiones. DBFS está optimizado para trabajar con Apache Spark, lo que facilita la lectura y escritura de grandes conjuntos de datos distribuidos.
 
