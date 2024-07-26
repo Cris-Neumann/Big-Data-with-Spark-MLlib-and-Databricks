@@ -51,9 +51,9 @@ Con las siguientes características siendo categóricas: ['B_30', 'B_38', 'D_114
 Los datos de entrenamiento y de prueba se obtendrán desde la API de Kaggle, desde los archivos "train.parquet" y "test.parquet", respectivamente, mientras que las etiquetas (campo donde se clasifican como clientes con default o no, para realizar aprendizaje supervisado) de los id de clientes han sido catalogadas a parte, y han sido almacenadas en Amazon S3, en archivo "train_labels.csv", por lo cual se deberán obtener desde Databricks las etiquetas provenientes de un bucket de AWS.
 
 ## Sobre la métrica de evaluación
-La métrica de evaluación, 𝑀, para este proyecto es la media de dos medidas de ordenamiento por rango: Coeficiente de Gini Normalizado, 𝐺, y la tasa de incumplimiento se situó en el 4%,𝐷.
+La métrica de evaluación, 𝑀, para este proyecto es la media de dos medidas de ordenamiento por rango: Coeficiente de Gini Normalizado, 𝐺, y la tasa de incumplimiento, 𝐷.
 
-𝑀= 0,5 ⋅ ( 𝐺 + 𝐷 )
+𝑀 = 0,5 ⋅ ( 𝐺 + 𝐷 )
 
 La tasa predeterminada capturada en 4% es el porcentaje de etiquetas positivas (predeterminadas) capturadas dentro del 4% de las predicciones con mayor clasificación y representa una estadística de Sensibilidad/Recuperación. Para ambas submétricas 𝐺 y 𝐷, a las etiquetas negativas se les asigna un peso de 20 para ajustar el muestreo descendente. Esta métrica tiene un valor máximo de 1.0. Para cada id de cliente del del conjunto de prueba (campo 'customer_ID'), se va a predecir una probabilidad para la variable objetivo, en el formato (customer_ID, prediction).
 
