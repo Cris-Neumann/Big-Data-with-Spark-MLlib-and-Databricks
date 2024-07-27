@@ -42,8 +42,6 @@ El esquema general del modo en que se relacionan las partes del sistema es el si
 ![Databricks](https://github.com/user-attachments/assets/8a912e9f-6cdf-43a3-8edb-fe8525dc23a7)
 
 ## Sobre el conjunto de datos
-El conjunto de datos contiene características de perfil agregadas para cada cliente (campo "customer_ID") en cada fecha de estado de cuenta. La cantidad de registros supera los 11 millones de operaciones crediticias procesadas en el conjunto a predecir o de testeo, sobre los 5,5 millones en el conjunto de entrenamiento, y sobre los 450.000 clientes etiquetados. Las características están anonimizadas, normalizadas y se dividen en las siguientes categorías generales:
-
 El conjunto de datos contiene características de perfil agregadas para cada cliente (campo "customer_ID") en cada fecha de estado de cuenta. El número total de registros supera los 11 millones de operaciones crediticias en el conjunto a predecir, 5.5 millones en el conjunto de entrenamiento, y alrededor de 450.000 clientes etiquetados. Las características están anonimizadas, normalizadas y se dividen en las siguientes categorías generales:
 
 - D_* = Variables de morosidad
