@@ -61,7 +61,9 @@ La métrica de evaluación, 𝑀, para este proyecto es la media de dos medidas 
 La tasa predeterminada capturada en 4% es el porcentaje de etiquetas positivas (predeterminadas) capturadas dentro del 4% de las predicciones con mayor clasificación y representa una estadística de Sensibilidad/Recuperación. Para ambas submétricas 𝐺 y 𝐷, a las etiquetas negativas se les asigna un peso de 20 para ajustar el muestreo descendente. Esta métrica tiene un valor máximo de 1.0. Para cada id de cliente del conjunto de prueba (campo 'customer_ID'), se va a predecir la probabilidad para la variable objetivo, en el formato (customer_ID, prediction).
 
 ## Proceso de creación del modelo de ML
-- Extracción de datos: Los datos de entrenamiento y de los clientes a evaluar se obtendrán desde la API de Kaggle, ambos en formato parquet. Mientras que las etiquetas (campo donde se clasifican como clientes con default o no, para realizar aprendizaje supervisado) de los id de clientes han sido almacenadas en Amazon S3, en formato CSV, desde donde Databricks deberá obtener dichos registros. En archivos "extract_data" y "extract_labels" se muestra como obtener los datos y las etiquetas, respectivamente.
+- Ingesta de datos: Los datos de entrenamiento y de los clientes a evaluar se obtendrán desde la API de Kaggle, ambos en formato parquet. Mientras que las etiquetas (campo donde se clasifican como clientes con default o no, para realizar aprendizaje supervisado) de los id de clientes han sido almacenadas en Amazon S3, en formato CSV, desde donde Databricks deberá obtener dichos registros. En archivos "extract_data" y "extract_labels" se muestra como obtener los datos y las etiquetas, respectivamente. Una vez extraídos, serán almacenados de forma transitoria en DBFS.
+- 
+- Análisis Exploratorio de datos (EDA) e Ingeniería de Características:
 
 
 
