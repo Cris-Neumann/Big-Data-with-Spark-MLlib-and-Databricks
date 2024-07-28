@@ -39,7 +39,8 @@ Kaggle es una plataforma en línea para competencias en ciencia de datos, donde 
 El esquema general del modo en que se relacionan las partes del sistema es el siguiente:
 <br/><br/>
 
-![Databricks](https://github.com/user-attachments/assets/8a912e9f-6cdf-43a3-8edb-fe8525dc23a7)
+![Databricks](https://github.com/user-attachments/assets/1a8dd472-e14e-490c-9a47-55cdcfe94218)
+
 
 ## Sobre el conjunto de datos
 El conjunto de datos contiene características de perfil agregadas para cada cliente (campo "customer_ID") en cada fecha de estado de cuenta. El número total de registros supera los 11 millones de operaciones crediticias en el conjunto a predecir, 5.5 millones en el conjunto de entrenamiento, y alrededor de 450.000 clientes etiquetados. Las características están anonimizadas, normalizadas y se dividen en las siguientes categorías generales:
