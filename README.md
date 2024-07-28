@@ -39,7 +39,7 @@ Kaggle es una plataforma en línea para competencias en ciencia de datos, donde 
 El esquema general del modo en que se relacionan las partes del sistema es el siguiente:
 <br/><br/>
 
-![Databricks](https://github.com/user-attachments/assets/1a8dd472-e14e-490c-9a47-55cdcfe94218)
+![Databricks](https://github.com/user-attachments/assets/0e14303f-4b51-4895-a25e-99814618568d)
 
 
 ## Sobre el conjunto de datos
