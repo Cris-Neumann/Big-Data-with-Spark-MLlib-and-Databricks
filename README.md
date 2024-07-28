@@ -75,6 +75,6 @@ La tasa predeterminada capturada en 4% es el porcentaje de etiquetas positivas (
   
 - Pequeña disgresión: Gradient Tree Boosting (GBT) es un algoritmo de aprendizaje supervisado utilizado principalmente para tareas de clasificación y regresión. El concepto central detrás de GBT es construir un modelo robusto mediante la combinación de varios árboles de decisión simples (o débiles) de manera secuencial, donde cada árbol nuevo intenta corregir los errores cometidos por los árboles anteriores. Aunque es computacionalmente intensivo, sus capacidades para manejar datos complejos, su implementación nativa en Spark MLlib y su capacidad para producir resultados precisos lo hacen muy popular en el campo del Machine Learning.
   
-- Persistencia de datos y modelo: Finalmente, el modelo generado, las predicciones realizadas y los datasets depurados en el proceso de ingeniería de características son almacenados para que persistan en un bucket de Amazon S3, con lo cual se libera el espacio y memoria de Databricks, y puedan ser usados en el futuro por otros usuarios con acceso al bucket.
+- Persistencia de datos y modelo: Finalmente, el modelo generado, las predicciones realizadas y los datasets depurados en el proceso de ingeniería de características son almacenados para que persistan en un bucket de Amazon S3, lo cual se puede apreciar en archivo "save_data", con lo cual se libera el espacio y memoria de Databricks, y estos resultados puedan ser usados en el futuro por otros usuarios con acceso al bucket.
 
 
