@@ -63,6 +63,12 @@ La métrica de evaluación, 𝑀, para este proyecto es la media de dos medidas 
 La tasa predeterminada capturada en 4% es el porcentaje de etiquetas positivas (predeterminadas) capturadas dentro del 4% de las predicciones con mayor clasificación y representa una estadística de Sensibilidad/Recuperación. Para ambas submétricas 𝐺 y 𝐷, a las etiquetas negativas se les asigna un peso de 20 para ajustar el muestreo descendente. Esta métrica tiene un valor máximo de 1.0. Para cada id de cliente del conjunto de prueba (campo 'customer_ID'), se va a predecir la probabilidad para la variable objetivo, en el formato (customer_ID, prediction).
 
 ## Proceso de creación del modelo de ML
+- Extracción de Datos
+
+Descripción de la fuente de datos (base de datos, APIs, archivos, etc.)
+Método utilizado para la extracción (consultas SQL, requests, etc.)
+Ejemplo de código (si es aplicable)
+
 Gradient Tree Boosting (GBT) es un algoritmo de aprendizaje supervisado utilizado principalmente para tareas de clasificación y regresión. El concepto central detrás de GBT es construir un modelo robusto mediante la combinación de varios árboles de decisión simples (o débiles) de manera secuencial, donde cada árbol nuevo intenta corregir los errores cometidos por los árboles anteriores. Aunque es computacionalmente intensivo, sus capacidades para manejar datos complejos, su implementación nativa en Spark MLlib y su capacidad para producir resultados precisos lo hacen muy popular en el campo del Machine Learning.
 
 
