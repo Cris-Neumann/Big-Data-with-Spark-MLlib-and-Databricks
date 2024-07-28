@@ -69,6 +69,10 @@ La tasa predeterminada capturada en 4% es el porcentaje de etiquetas positivas (
 
 ![distribuciones](https://github.com/user-attachments/assets/7a6e608e-49e4-40e9-b75d-244e140f1177)
 
+<p align="center">
+  <img width="555" alt="create_test_cluster" src="https://github.com/user-attachments/assets/7a6e608e-49e4-40e9-b75d-244e140f1177" alt="distribuciones">
+</p>
+
 Gradient Tree Boosting (GBT) es un algoritmo de aprendizaje supervisado utilizado principalmente para tareas de clasificación y regresión. El concepto central detrás de GBT es construir un modelo robusto mediante la combinación de varios árboles de decisión simples (o débiles) de manera secuencial, donde cada árbol nuevo intenta corregir los errores cometidos por los árboles anteriores. Aunque es computacionalmente intensivo, sus capacidades para manejar datos complejos, su implementación nativa en Spark MLlib y su capacidad para producir resultados precisos lo hacen muy popular en el campo del Machine Learning.
 
 
