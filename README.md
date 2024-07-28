@@ -66,9 +66,8 @@ La tasa predeterminada capturada en 4% es el porcentaje de etiquetas positivas (
 - Análisis Exploratorio de datos (EDA) e Ingeniería de Características: Se realiza la exploración de los datos, con el fin de conocer su distribución, valores faltantes, estructura, volumen y forma de registros y características, entre otros. 
 
 <p align="center">
-  <img width="555" alt="create_test_cluster" src="[https://github.com/user-attachments/assets/58557b47-3c53-47cb-b46f-788999920702](https://github.com/user-attachments/assets/840163b4-7ee1-457b-9ebe-2ad5c0b4824c)">
+  <img width="555" alt="create_test_cluster" src=![distribuciones](https://github.com/user-attachments/assets/be0c7eb1-e819-4f86-bd46-bed8f62da5db)>
 </p>
-
 
 
 Gradient Tree Boosting (GBT) es un algoritmo de aprendizaje supervisado utilizado principalmente para tareas de clasificación y regresión. El concepto central detrás de GBT es construir un modelo robusto mediante la combinación de varios árboles de decisión simples (o débiles) de manera secuencial, donde cada árbol nuevo intenta corregir los errores cometidos por los árboles anteriores. Aunque es computacionalmente intensivo, sus capacidades para manejar datos complejos, su implementación nativa en Spark MLlib y su capacidad para producir resultados precisos lo hacen muy popular en el campo del Machine Learning.
