@@ -62,9 +62,12 @@ La tasa predeterminada capturada en 4% es el porcentaje de etiquetas positivas (
 
 ## Proceso de creación del modelo de ML
 - Ingesta de datos: Los datos de entrenamiento y de los clientes a evaluar se obtendrán desde la API de Kaggle, ambos en formato parquet. Mientras que las etiquetas (campo donde se clasifican como clientes con default o no, para realizar aprendizaje supervisado) de los id de clientes han sido almacenadas en Amazon S3, en formato CSV, desde donde Databricks deberá obtener dichos registros. En archivos "extract_data" y "extract_labels" se muestra como obtener los datos y las etiquetas, respectivamente. Una vez extraídos, serán almacenados de forma transitoria en DBFS.
-- 
-- Análisis Exploratorio de datos (EDA) e Ingeniería de Características:
 
+- Análisis Exploratorio de datos (EDA) e Ingeniería de Características: Se realiza la exploración de los datos, con el fin de conocer su distribución, valores faltantes, estructura, volumen y forma de registros y características, entre otros. 
+
+<p align="center">
+  <img width="555" alt="create_test_cluster" src="[https://github.com/user-attachments/assets/58557b47-3c53-47cb-b46f-788999920702](https://github.com/user-attachments/assets/840163b4-7ee1-457b-9ebe-2ad5c0b4824c)">
+</p>
 
 
 
