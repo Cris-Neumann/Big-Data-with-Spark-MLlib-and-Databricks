@@ -53,8 +53,6 @@ El conjunto de datos contiene características de perfil agregadas para cada cli
 
 Con las siguientes características siendo categóricas: ['B_30', 'B_38', 'D_114', 'D_116', 'D_117', 'D_120', 'D_126', 'D_63', 'D_64', 'D_66', 'D_68'] El objetivo es predecir, para cada "customer_ID", la probabilidad de un futuro impago (campo "target" = 1).
 
-Los datos de entrenamiento y de prueba se obtendrán desde la API de Kaggle, desde los archivos "train.parquet" y "test.parquet", respectivamente, mientras que las etiquetas (campo donde se clasifican como clientes con default o no, para realizar aprendizaje supervisado) de los id de clientes han sido catalogadas a parte, y han sido almacenadas en Amazon S3, en archivo "train_labels.csv", por lo cual se deberán obtener desde Databricks las etiquetas provenientes de un bucket de AWS.
-
 ## Sobre la métrica de evaluación
 La métrica de evaluación, 𝑀, para este proyecto es la media de dos medidas de ordenamiento por rango: Coeficiente de Gini Normalizado, 𝐺, y la tasa de incumplimiento, 𝐷.
 
@@ -63,11 +61,10 @@ La métrica de evaluación, 𝑀, para este proyecto es la media de dos medidas 
 La tasa predeterminada capturada en 4% es el porcentaje de etiquetas positivas (predeterminadas) capturadas dentro del 4% de las predicciones con mayor clasificación y representa una estadística de Sensibilidad/Recuperación. Para ambas submétricas 𝐺 y 𝐷, a las etiquetas negativas se les asigna un peso de 20 para ajustar el muestreo descendente. Esta métrica tiene un valor máximo de 1.0. Para cada id de cliente del conjunto de prueba (campo 'customer_ID'), se va a predecir la probabilidad para la variable objetivo, en el formato (customer_ID, prediction).
 
 ## Proceso de creación del modelo de ML
-- Extracción de Datos
+- Extracción de datos: Los datos de entrenamiento y de los clientes a evaluar se obtendrán desde la API de Kaggle, ambos en formato parquet. Mientras que las etiquetas (campo donde se clasifican como clientes con default o no, para realizar aprendizaje supervisado) de los id de clientes han sido almacenadas en Amazon S3, en formato CSV, desde donde Databricks deberá obtener dichos registros. En archivos "extract_data" y "extract_labels" se muestra como obtener los datos y las etiquetas, respectivamente.
 
-Descripción de la fuente de datos (base de datos, APIs, archivos, etc.)
-Método utilizado para la extracción (consultas SQL, requests, etc.)
-Ejemplo de código (si es aplicable)
+
+
 
 Gradient Tree Boosting (GBT) es un algoritmo de aprendizaje supervisado utilizado principalmente para tareas de clasificación y regresión. El concepto central detrás de GBT es construir un modelo robusto mediante la combinación de varios árboles de decisión simples (o débiles) de manera secuencial, donde cada árbol nuevo intenta corregir los errores cometidos por los árboles anteriores. Aunque es computacionalmente intensivo, sus capacidades para manejar datos complejos, su implementación nativa en Spark MLlib y su capacidad para producir resultados precisos lo hacen muy popular en el campo del Machine Learning.
 
