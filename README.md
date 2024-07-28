@@ -67,8 +67,6 @@ La tasa predeterminada capturada en 4% es el porcentaje de etiquetas positivas (
 
 ![eventos](https://github.com/user-attachments/assets/54bf3dd7-3c8c-426f-b516-64fd2f61ef12)
 
-![distribuciones](https://github.com/user-attachments/assets/7a6e608e-49e4-40e9-b75d-244e140f1177)
-
 <p align="center">
   <img width="555" alt="create_test_cluster" src="https://github.com/user-attachments/assets/7a6e608e-49e4-40e9-b75d-244e140f1177" alt="distribuciones">
 </p>
