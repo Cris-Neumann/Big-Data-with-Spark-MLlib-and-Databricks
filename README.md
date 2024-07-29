@@ -20,7 +20,7 @@ Para cumplir el objetivo de predicción, se usará un algoritmo de Machine Learn
 ## ¿Qué es Databricks?
 Databricks es una plataforma en la nube que optimiza el uso de Apache Spark para la ingeniería de datos. Facilita la colaboración entre ingenieros de datos y científicos de datos al proporcionar un entorno integrado para el procesamiento y análisis de grandes volúmenes de datos. Permite diseñar, implementar y gestionar flujos de trabajo de datos de manera eficiente, aprovechando las capacidades de Apache Spark para realizar tareas de ETL, procesamiento en tiempo real y Machine Learning.. Documentación oficial: https://www.databricks.com/databricks-documentation.
 
-* Es importante notar que, para aplicaciones creadas con Apache Spark, en Databricks no es necesario inicializar el "SparkContext" ni crear "SparkSessions", ya que el entorno lo hace automáticamente
+* Es importante notar que, para aplicaciones creadas con Apache Spark, en Databricks no es necesario inicializar el "SparkContext" ni crear "SparkSessions", ya que el entorno lo hace automáticamente.
   
 * Como paso previo, se debe crear un clúster. En la versión Community Edition, que es gratuita, el clúster tiene 15 GB de memoria y 2 núcleos. Adjunto una imagen donde se muestra cómo crear el clúster en la sección "Compute":
 
