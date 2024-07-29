@@ -22,7 +22,7 @@ Databricks es una plataforma en la nube que optimiza el uso de Apache Spark para
 
 * Es importante notar que, para aplicaciones creadas con Apache Spark, en Databricks no es necesario inicializar el "SparkContext" ni crear "SparkSessions", ya que el entorno lo hace automáticamente.
   
-* Como paso previo, se debe crear un clúster. En la versión Community Edition, que es gratuita, el clúster tiene 15 GB de memoria y 2 núcleos. Adjunto una imagen donde se muestra cómo crear el clúster en la sección "Compute":
+* Como paso previo, se debe crear un clúster. En la versión Community Edition, el clúster tiene 15 GB de memoria y 2 núcleos. Adjunto una imagen donde se muestra cómo crear el clúster en la sección "Compute":
 
 <p align="center">
   <img width="555" alt="create_test_cluster" src="https://github.com/user-attachments/assets/58557b47-3c53-47cb-b46f-788999920702">
