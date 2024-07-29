@@ -51,7 +51,7 @@ El conjunto de datos contiene características de perfil agregadas para cada cli
 - B_* = Variables de equilibrio
 - R_* = Variables de riesgo
 
-Con las siguientes características siendo categóricas: ['B_30', 'B_38', 'D_114', 'D_116', 'D_117', 'D_120', 'D_126', 'D_63', 'D_64', 'D_66', 'D_68'] El objetivo es predecir, para cada "customer_ID", la probabilidad de un futuro impago (campo "target" = 1).
+Con las siguientes características siendo categóricas: ['B_30', 'B_38', 'D_114', 'D_116', 'D_117', 'D_120', 'D_126', 'D_63', 'D_64', 'D_66', 'D_68'], el objetivo es predecir, para cada "customer_ID", la probabilidad de un futuro impago (campo "target" = 1).
 
 ## Sobre la métrica de evaluación
 La métrica de evaluación, 𝑀, para este proyecto es la media de dos medidas de ordenamiento por rango: Coeficiente de Gini Normalizado, 𝐺, y la tasa de incumplimiento, 𝐷.
